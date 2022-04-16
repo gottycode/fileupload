@@ -1,0 +1,43 @@
+https://qiita.com/mserizawa/items/7f1b9e5077fd3a9d336b
+
+conda create --name api-env python=3.8  
+conda activate api-env
+
+#version 検討
+https://www.djangoproject.com/download/
+pip install django==3.2
+pip install djangorestframework
+pip install markdown       # Markdown support for the browsable API.
+pip install django-filter  # Filtering support
+
+django-admin startproject fileuploadapi
+django-admin startapp api
+django-admin startapp timestamp
+python manage.py makemigrations          
+
+プロジェクト名検討
+アプリ名検討
+⇒アマノのを参考に
+アプリ名をconfigに
+
+ここにそって
+https://www.django-rest-framework.org/#installation
+
+
+timestamp
+├api
+├config
+├timestamp
+management
+account
+
+http://localhost:8000/api2/tsreq/
+
+http://localhost:8000/static/index.html
+http://localhost:8000/api/users/
+http://localhost:8000/admin/auth/user/
+
+    {"system_code" :1,
+    "file_id" :2,
+    "pdf_file":3,
+    "status_cd":4}
